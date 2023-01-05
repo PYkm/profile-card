@@ -1,0 +1,83 @@
+:root {
+  --font-family: 'Kumbh Sans', 'Verdana', sans-serif;
+  --main-bg-color: hsl(185, 75%, 39%);
+  --heading-color: hsl(229, 23%, 23%);
+    --p-color: hsl(0, 0%, 59%);
+}
+
+html {
+  font-size: 1em;
+}
+
+body {
+  background: no-repeat right 45vw  bottom 50vh  /auto 120% url(../images/bg-pattern-top.svg), no-repeat left 45vw  top 50vh  /auto 120% url(../images/bg-pattern-bottom.svg), var(--main-bg-color);
+  color: var(--p-color);
+  font: 400 1em/1.25  var(--font-family);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
+main {
+  background: no-repeat top/contain url(../images/bg-pattern-card.svg) white;
+  border-radius: 1em;
+  box-shadow: 0 0 2em 0 hsla(227, 10%, 46%, 0.4);
+  margin: 0 auto;
+  padding: 5em 0 1em;
+  width: 90%;
+  max-width: 20em;
+}
+
+main::before{
+  content: '';
+  background: no-repeat center/ contain url(../images/image-victor.jpg);
+  border: 0.3em white solid;
+  border-radius: 170893px;
+  display: block;
+  height: 6em;
+  margin: 0 auto;
+  width: 6em;
+}
+
+h1,
+strong {
+  font-weight: 700;
+  color: var(--heading-color);
+}
+
+h1,
+strong,
+.name_n_age > p {
+  font-size: 1.125rem;
+}
+
+strong {
+  display: block;
+  margin-bottom: 0.25em;
+}
+
+.name_n_age {
+  display: flex;
+  justify-content: center;
+  gap: 0.6em;
+  margin: 1em 0 0.5em;
+}
+
+hr {
+  margin: 1.5em 0;
+}
+
+.social_info {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 1em;
+}
+
+.social_info > p{
+  font-size: 0.8rem;
+}
+
+.attribution { font-size: 11px; text-align: center; color: hsl(227, 10%, 46%);}
+.attribution a { color: hsl(228, 45%, 44%); }
